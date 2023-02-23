@@ -70,7 +70,7 @@ function App() {
                             <Page404 />
                         </>
                     }
-                    path="*"
+                    path="/*"
                 />
             </Routes>
         </div>
