@@ -10,6 +10,7 @@ const authRouter = require("./routes/auth.js");
 const refreshRouter = require("./routes/refreshToken.js")
 const PORT = process.env.PORT || 3000;
 
+dotenv.config();
 const corsOption = {
     origin: [process.env.FRONT_END_URL || "http://localhost:5173"],
     credentials: true,
@@ -22,7 +23,6 @@ app.use(helmet());
 app.use(helmet.hidePoweredBy());
 app.use("/public", express.static("public"));
 app.set("view-engine", "ejs");
-dotenv.config();
 require("./db");
 app.use("/link/", linkRouter);
 app.use("/auth/", authRouter);
