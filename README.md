@@ -31,3 +31,6 @@ Note The Backend is hosted on render so the app will have a little startup time
   
   This is the page where you can monitor your link;see how many people visited which dates they visited the link their browser and operating system.All visualized using charts js in charts such as line chart,pie chart,bar chart and donut chart
 </picture>
+
+
+why did i make it....well i was bored 
